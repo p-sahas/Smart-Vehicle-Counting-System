@@ -69,6 +69,7 @@ This tool demonstrates the practical application of Computer Vision and Deep Lea
 
 Ensure your video file path is correct in main.py, then run:
 
+Ensure your video file path is correct in main.py, then run:
 ```bash
     python main.py
 ```
@@ -81,9 +82,17 @@ Ensure your video file path is correct in main.py, then run:
 2. **Masking**: Applies a bitwise AND operation to isolate the road.
 3. **Detection**: YOLOv8 detects objects and returns bounding boxes.
 4. **Tracking**: SORT assigns a unique ID to each detection box based on IoU (Intersection over Union).
+
+2. **Masking**: Applies a bitwise AND operation to isolate the road.
+
+3. **Detection**: YOLOv8 detects objects and returns bounding boxes.
+
+4. **Tracking**: SORT assigns a unique ID to each detection box based on IoU (Intersection over Union).
+
 5. **Counting**: The system checks if the center point of a tracked object crosses the defined line coordinates.
 
 ## Credits & Acknowledgements
 
 + **SORT Algorithm**: The tracking logic is based on the original implementation by [Alex Bewley](https://github.com/abewley/sort).
+
 + **YOLOv8**: Object detection models provided by [Ultralytics](https://github.com/ultralytics/ultralytics).
