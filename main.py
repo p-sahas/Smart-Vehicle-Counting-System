@@ -31,6 +31,7 @@ class_names = model.names
 # Load the masking image
 # The mask is used to filter out non-road areas to improve detection accuracy
 mask=cv2.imread('./mask.png')
+model.to('cuda')  # Use GPU for inference if available
 
 # Initialize the SORT (Simple Online and Realtime Tracking) tracker
 # max_age: Maximum frames to keep a track alive without new detections
